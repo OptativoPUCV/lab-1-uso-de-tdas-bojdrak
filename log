@@ -30,3 +30,27 @@ exercises.c:122:14: error: implicit declaration of function 'isEmpty' [-Wimplici
       |              ^~~~~~~
 Compilation failed
 9ed09bd
+Thu, Mar 20, 2025  7:30:23 PM: 
+ exercises.c | 82 -------------------------------------------------------------
+ 1 file changed, 82 deletions(-)
+test.c: In function 'test_suma_lista':
+test.c:100:17: error: implicit declaration of function 'sumaLista' [-Wimplicit-function-declaration]
+  100 |     int suma2 = sumaLista(L);
+      |                 ^~~~~~~~~
+test.c: In function 'test_elimina_elemento':
+test.c:132:5: error: implicit declaration of function 'eliminaElementos'; did you mean 'test_elimina_elemento'? [-Wimplicit-function-declaration]
+  132 |     eliminaElementos(L, elem);
+      |     ^~~~~~~~~~~~~~~~
+      |     test_elimina_elemento
+test.c: In function 'test_copia_pila':
+test.c:175:5: error: implicit declaration of function 'copia_pila'; did you mean 'test_copia_pila'? [-Wimplicit-function-declaration]
+  175 |     copia_pila(P1, P2);
+      |     ^~~~~~~~~~
+      |     test_copia_pila
+test.c: In function 'test_parentesis_balanceados':
+test.c:217:9: error: implicit declaration of function 'parentesisBalanceados'; did you mean 'test_parentesis_balanceados'? [-Wimplicit-function-declaration]
+  217 |     if(!parentesisBalanceados(s)){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+      |         test_parentesis_balanceados
+Compilation failed
+8306286
