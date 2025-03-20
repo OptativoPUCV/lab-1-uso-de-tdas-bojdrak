@@ -122,3 +122,8 @@ exercises.c:124:16: error: implicit declaration of function 'destroy_stack' [-Wi
       |                ^~~~~~~~~~~~~
 Compilation failed
 bc4c46d
+Thu, Mar 20, 2025  8:45:14 PM: 
+ exercises.c | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+ tests:  0|0
+196a839
