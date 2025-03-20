@@ -46,7 +46,7 @@ List* crea_lista() {
    for(int i = 1; i < 11; i++) {
       int *dato = (int*) malloc(sizeof(int));
       *dato = i;
-      pushFront(L, dato);
+      pushBack(L, dato);
    }
    return L;
 }
@@ -131,5 +131,4 @@ int parentesisBalanceados(char *cadena) {
    } else {
       return 0;
    }
-}
-
+} 

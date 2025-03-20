@@ -16,3 +16,17 @@ exercises.c:122:14: error: implicit declaration of function 'isEmpty' [-Wimplici
       |              ^~~~~~~
 Compilation failed
 cde75c2
+Thu, Mar 20, 2025  7:30:09 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:62:24: error: implicit declaration of function 'size' [-Wimplicit-function-declaration]
+   62 |    for (int i = 0; i < size(L); i++) {
+      |                        ^~~~
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:122:14: error: implicit declaration of function 'isEmpty' [-Wimplicit-function-declaration]
+  122 |          if (isEmpty(P)) {
+      |              ^~~~~~~
+Compilation failed
+9ed09bd
