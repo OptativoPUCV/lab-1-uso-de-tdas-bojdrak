@@ -104,3 +104,8 @@ Thu, Mar 20, 2025  8:40:26 PM:
  tests:  3|2
 total_score: 30/70
 5be287c
+Thu, Mar 20, 2025  8:43:16 PM: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+ tests:  0|0
+93cf09c
