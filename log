@@ -109,3 +109,16 @@ Thu, Mar 20, 2025  8:43:16 PM:
  1 file changed, 5 insertions(+), 4 deletions(-)
  tests:  0|0
 93cf09c
+Thu, Mar 20, 2025  8:43:59 PM: 
+ exercises.c | 14 ++++++--------
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:123:16: error: implicit declaration of function 'isEmpty' [-Wimplicit-function-declaration]
+  123 |            if (isEmpty(P)) {
+      |                ^~~~~~~
+exercises.c:124:16: error: implicit declaration of function 'destroy_stack' [-Wimplicit-function-declaration]
+  124 |                destroy_stack(P);
+      |                ^~~~~~~~~~~~~
+Compilation failed
+bc4c46d
