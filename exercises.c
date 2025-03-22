@@ -110,31 +110,32 @@ void copia_pila(Stack* P1, Stack* P2) {
 
 /*
 Ejercicio 5.
-La función verifica si la cadena de entrada tiene sus 
+La función verifica si la string de entrada tiene sus 
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
+int parentesisBalanceados(char *string) {
    Stack* P = create_stack();
-   char *dato;
+   char *top_stack;
 
-   for (int i = 0; cadena[i] != '\0'; i++) {
-       if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{') {
-           push(P, &cadena[i]);
-       } else if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}') {
-           dato = (char*)top(P); 
-           if (dato == NULL) {
-               return 0;
-           }
-           pop(P); 
-           if ((*dato == '(' && cadena[i] != ')') || 
-               (*dato == '[' && cadena[i] != ']') ||
-               (*dato == '{' && cadena[i] != '}')) {
+   for (int i = 0; string[i] != '\0'; i++) {
+       if (string[i] == '(' || string[i] == '[' || string[i] == '{') {
+            push(P, &string[i]);
+       } else if (string[i] == ')' || string[i] == ']' || string[i] == '}') {
+            top_stack = (char*)top(P); 
+            if (top_stack == NULL) {
                return 0;
             }
-       }
-   }
 
-   return 1;
+            if ((*top_stack == '(' && string[i] != ')') || 
+            (*top_stack == '[' && string[i] != ']') ||
+            (*top_stack == '{' && string[i] != '}')) {
+               return 0;
+            }
+
+            pop(P); 
+      }
+   } 
+   return (P == NULL);
 }
