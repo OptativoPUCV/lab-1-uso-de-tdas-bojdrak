@@ -123,11 +123,11 @@ int parentesisBalanceados(char *string) {
        if (string[i] == '(' || string[i] == '[' || string[i] == '{') {
             push(P, &string[i]);
        } else if (string[i] == ')' || string[i] == ']' || string[i] == '}') {
-            top_stack = (char*) top(P); 
+            top_stack = (char*) pop(P); 
             if (top_stack == NULL) {
                return 0;
             }  
-            pop(P); 
+            
             if ((*top_stack == '(' && string[i] != ')') || 
             (*top_stack == '[' && string[i] != ']') ||
             (*top_stack == '{' && string[i] != '}')) {
