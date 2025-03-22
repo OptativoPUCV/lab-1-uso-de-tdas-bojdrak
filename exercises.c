@@ -59,7 +59,8 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    int suma = 0;
    int *dato = (int*)first(L);
-   for (int i = 0; i < get_size(L); i++) {
+
+   while (dato != NULL) { 
       suma += *dato;
       dato = (int*)next(L);
    }
@@ -127,11 +128,10 @@ int parentesisBalanceados(char *cadena) {
                return 0;
            }
            pop(P); 
-           if ((*dato == '(' && cadena[i] != ')') ||
+           if ((*dato == '(' && cadena[i] != ')') || 
                (*dato == '[' && cadena[i] != ']') ||
-               (*dato == '{' && cadena[i] != '}')) {
+               (*dato == '{' && cadena[i] != '}')
                return 0;
-           }
        }
    }
 

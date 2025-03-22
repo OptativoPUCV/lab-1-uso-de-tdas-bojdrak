@@ -137,3 +137,22 @@ Thu, Mar 20, 2025  9:19:07 PM:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 1322bf0
+Sat, Mar 22, 2025  6:01:25 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:133:50: error: expected ')' before 'return'
+  133 |                (*dato == '{' && cadena[i] != '}')
+      |                                                  ^
+      |                                                  )
+  134 |                return 0;
+      |                ~~~~~~                             
+exercises.c:131:15: note: to match this '('
+  131 |            if ((*dato == '(' && cadena[i] != ')') ||
+      |               ^
+exercises.c:135:8: error: expected expression before '}' token
+  135 |        }
+      |        ^
+Compilation failed
+5a6a422
